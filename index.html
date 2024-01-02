@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fdf0a67f6a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        
+        <nav>
+            <img src="Shivani.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificates">Certifications</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+            
+            <div class="coloum1">
+                <div class="header-text">
+                    <p></p>
+                    <h1>Hi, I'm <br><span>SHIVANI SHINDE</span></h1>
+                </div>
+            </div>
+            <div class="column2">
+                <img src="image.jpg">
+
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+<!-- For About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1><br><br>
+                <pre><span>Name:</span>  Shivani Rajendra Shinde</pre><br><br>
+                <pre><span>Profile:</span>  Computer Engineering Student</pre><br><br>
+                <pre><span>Email:</span>  shivshinde142003@gmail.com</pre><br><br>
+                <pre><span>Phone:</span>  9322398231</pre><br><br>
+
+            </div>
+            <div class="about-col-2">
+                <!-- <h1 class="sub-title">About Me</h1>
+                <p>Currently pursing a Bachelor of Engineering degree in Computer Engineering.</p> -->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span></li><br>
+                        <li><span>C Programming</span></li><br>
+                        <li><span>C++</span></li><br>
+                        <li><span>Java</span></li><br>
+                        <li><span>MySQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Intern</span><br>Prodigy InfoTech - Internship</li><br>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Pillai HOC College of Engineering and Technology</span><br>Bachelor of Engineering - BE<br>Dec 2021-Jun 2025</li><br>
+                        <li><span>Mahatma School of Academics and sports</span><br>HSC - Science<br>2021<br>Grade: 79.83%</li><br>
+                        <li><span>Mahatma School of Academics and sports</span><br>SSC<br>2019<br>Grade: 83.80%</li><br>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- -----Certification----- -->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="certificates-list">
+            <div>
+                <h2>Web Designing with HTML & CSS</h2>
+                <p>Skyy Skill Academy<br>Issued Jul 2023</p><br>
+                <!-- <img src="images/html&css.jpeg"> -->
+                <a href="img.PNG">Certificate</a>
+
+            </div>
+            <div>
+                <h2>Java Programming</h2>
+                <p>Aptech Learning<br>Issued Oct 2023</p><br>
+                <!-- <img src="images/fullstack.jpeg"> -->
+                <a href="imagejava.jpeg">Certificate</a>
+
+            </div>
+            <div>
+                <h2>Simplified Full Stack Development</h2>
+                <p>ExcelR<br>Issued Jul 2023<br>Credential ID 782F0715/EXLR</p><br>
+                <!-- <img src="images/fullstack.jpeg"> -->
+                <a href="imagesfullstack.jpeg">Certificate</a>
+
+            </div>
+            </div>
+    </div>
+</div>
+
+<!-- -----Projects----- -->
+
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imagestictactoe.PNG">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>Tic-tac-toe is played on a three-by-three grid by two players, who alternately place the marks X and O in one of the nine spaces in the grid.</p>
+                    <a href="http://127.0.0.1:5500/JDBC%20project/src/index.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imagesweather.PNG">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>The weather application will provide real-time weather information to the user for the city they have searched. If the user searches, for the wrong city, an Error message is also displayed to the user, stating that the searched city is not found</p>
+                    <a href="http://127.0.0.1:5500/weatherapp/index.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imagesstopwatch.PNG">
+                <div class="layer">
+                    <h3>StopWatch</h3>
+                    <p>A stopwatch is a timepiece designed to measure the amount of time that elapses between its activation and deactivation.</p>
+                    <a href="http://127.0.0.1:5500/stopwatch/index.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----Contact------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>shivshinde142003@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9322398231</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shivani-shinde-88b28b2a5/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_shhivanii22?igsh=ZHAzZzVqdmduc3Ix"><i class="fab fa-instagram"></i></a>
+                    
+
+                </div>
+                <a href="https://drive.google.com/file/d/1JNAbvGMNI0A0dZH3nHo9SR_z8orH8n2N/view?usp=sharing"download class="btn btn2"> Resume</a>
+            </div>
+        </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+  <!-- <script scr="script.js"></script>   -->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(var tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(var tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
